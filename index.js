@@ -17,7 +17,7 @@ const config = new Configuration({
 
 const openai = new OpenAIApi(config);
 
-app.use(express.static(path.join(__dirname+"/docs")));
+app.use(express.static(path.join(__dirname+"/public")));
 app.use(bodyParser.json());
 app.use(cors());
 
